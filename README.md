@@ -1,8 +1,8 @@
 # Laba9_Proc
-Realization of ps ax Linux command:
+Realization of **ps ax** linux command:
 ```
- ps ax
-    PID TTY      STAT   TIME COMMAND
+ root@artemserver:/home/artem# ps ax
+ PID TTY      STAT   TIME COMMAND
       1 ?        Ss     0:07 /sbin/init maybe-ubiquity
       2 ?        S      0:00 [kthreadd]
       3 ?        I<     0:00 [rcu_gp]
