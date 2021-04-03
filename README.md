@@ -16,4 +16,4 @@ PID TTY STAT TIME COMMAND
 930    0    S    0    /usr/sbin/chronyd
 ```
 
-Launch `chmod +x script.sh и ./script.sh`
+To launch `chmod +x script.sh и ./script.sh`
