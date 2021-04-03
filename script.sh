@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+echo "PID TTY STAT TIME COMMAND"
+
 for PID in $(ls -l /proc | awk '{print $9}' | grep -Eo '[0-9]{1,9}' | sort -n );
 do
 
@@ -16,7 +18,7 @@ TTIME=$((UTIME + STIME))
 TIME=$((TTIME / CLK_TCK))
 
 if [ -n "$CMD" ]; then
-        printf "%-8s | %-15s | %s\n" "$PID | $TTY | $STAT | $TIME | $CMD" | column -t  -s '|'
+        printf "$PID | $TTY | $STAT | $TIME | $CMD" | column -t  -s '|'
 
 fi
 done
