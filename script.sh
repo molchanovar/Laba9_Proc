@@ -18,7 +18,7 @@ TTIME=$((UTIME + STIME))
 TIME=$((TTIME / CLK_TCK))
 
 if [ -n "$CMD" ]; then
-        printf "$PID | $TTY | $STAT | $TIME | $CMD" | column -t  -s '|'
+        printf "%-8s | %-15s | %s\n" "$PID | $TTY | $STAT | $TIME | $CMD" | column -t  -s '|'
 
 fi
 done
