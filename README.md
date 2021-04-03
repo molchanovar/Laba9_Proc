@@ -1,5 +1,5 @@
 # Laba9_Proc
-My realization of **ps ax** linux command:
+Realization of **ps ax** linux command:
 ```
 [root@localhost proc_]# ./script.sh
 PID TTY STAT TIME COMMAND
